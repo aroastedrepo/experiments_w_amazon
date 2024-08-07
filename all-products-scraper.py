@@ -149,7 +149,7 @@ def scrape_all_reviews(url, driver):
     return all_reviews
 
 def main():
-    start_url = 'https://villagecompanystore.com'
+    start_url = "" # insert url
     product_urls = crawl_for_product_urls(start_url)
 
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
